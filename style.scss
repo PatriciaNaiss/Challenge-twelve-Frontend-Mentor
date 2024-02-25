@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+
+$cyan: #2ab2af;
+$cyan-hell: #4ABEBD;
+$bright-yellow:	#c0df34;
+$light-grey: #e5eff5;
+$grayish-blue: #98a6bd;
+$white: #ffffff;
+$font-weight-400: 400;
+$font-weight-700: 700;
+$font-karla: 'Karla', sans-serif;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: $font-karla;
+  background: $light-grey;
+}
+main {
+  background: $white;
+  border-radius: 5px;
+  margin: 20px;
+  header {
+    padding: 25px;
+    h1{
+      font-size: 20px;
+      font-weight: $font-weight-700;
+      color: $cyan;
+      margin: 10px 0 20px 0;
+    }
+    h2 {
+      margin: 15px 0;
+      font-size: 15px;
+      color: $bright-yellow;
+      font-weight: $font-weight-700;
+    }
+    h3 {
+      font-size: 14px;
+      line-height: 26px;
+      color: $grayish-blue;
+      font-weight: $font-weight-400;
+      margin: 0;
+    }
+  }
+  article {
+    background: $cyan;
+    padding: 25px;
+    width: 100%;
+    color: $white;
+    h1 {
+      font-size: 20px;
+      font-weight: $font-weight-400;
+      margin: 0px 0 15px 0;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h2 {
+        font-size: 35px;
+        font-weight: $font-weight-400;
+        margin: 0;
+        padding-right: 10px;
+      }
+      h3 {
+        font-weight: $font-weight-400;
+        font-size: 16px;
+        color: $light-grey;
+        opacity: 0.7;
+      }
+    }
+    p {
+      margin: 5px 0;
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 15px 20px;
+      background: $bright-yellow;
+      color: $white;
+      font-weight: $font-weight-400;
+      font-size: 17px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+  section {
+    background: $cyan-hell;
+    padding: 25px;
+    color: $white;
+    border-radius: 0 0 5px 5px;
+    h1 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: $font-weight-400;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      font-weight: $font-weight-400;
+      color: $light-grey;
+      opacity: 0.7;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 550px){
+main {
+  max-width: 650px;
+  header {
+    padding: 45px;
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3{
+      font-size: 16px;
+    }
+  }
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    article {
+      border-radius: 0 0 0 5px;
+      padding: 45px;
+    }
+    section {
+      border-radius: 0 0 5px 0;
+      padding: 45px;
+    }
+  }
+}
+}

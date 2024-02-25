@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  background: #e5eff5;
+}
+
+main {
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 20px;
+}
+main header {
+  padding: 25px;
+}
+main header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2ab2af;
+  margin: 10px 0 20px 0;
+}
+main header h2 {
+  margin: 15px 0;
+  font-size: 15px;
+  color: #c0df34;
+  font-weight: 700;
+}
+main header h3 {
+  font-size: 14px;
+  line-height: 26px;
+  color: #98a6bd;
+  font-weight: 400;
+  margin: 0;
+}
+main article {
+  background: #2ab2af;
+  padding: 25px;
+  width: 100%;
+  color: #ffffff;
+}
+main article h1 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px 0 15px 0;
+}
+main article div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main article div h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+  padding-right: 10px;
+}
+main article div h3 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #e5eff5;
+  opacity: 0.7;
+}
+main article p {
+  margin: 5px 0;
+}
+main article button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #c0df34;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+}
+main section {
+  background: #4ABEBD;
+  padding: 25px;
+  color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+main section h1 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+main section ul {
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+  color: #e5eff5;
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+  main {
+    max-width: 650px;
+  }
+  main header {
+    padding: 45px;
+  }
+  main header h1 {
+    font-size: 24px;
+  }
+  main header h2 {
+    font-size: 18px;
+  }
+  main header h3 {
+    font-size: 16px;
+  }
+  main div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main div article {
+    border-radius: 0 0 0 5px;
+    padding: 45px;
+  }
+  main div section {
+    border-radius: 0 0 5px 0;
+    padding: 45px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
